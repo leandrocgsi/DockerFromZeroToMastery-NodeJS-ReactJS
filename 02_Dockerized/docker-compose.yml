@@ -18,7 +18,7 @@ services:
     build:
       context: ./backend
       dockerfile: ./Dockerfile
-    image: leandrocgsi/node-react-backend
+    image: node-react-backend
     restart: always
     environment:
       TZ: America/Sao_Paulo
@@ -33,7 +33,7 @@ services:
     build:
       context: ./frontend
       dockerfile: ./Dockerfile
-    image: leandrocgsi/node-react-frontend
+    image: node-react-frontend
     restart: always
     environment:
       TZ: America/Sao_Paulo

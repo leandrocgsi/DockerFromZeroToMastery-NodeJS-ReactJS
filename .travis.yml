@@ -1,0 +1,28 @@
+language: node_js
+node_js:
+  - 14
+before_install:
+  - sudo apt-get update
+  - cd 02_Dockerized/frontend/
+  - echo "Let's install Node Modules in Front-end!!!"
+  - npm install
+  - cd ../backend/
+  - echo "Let's install Node Modules in Back-end!!!"
+  - npm install
+  - cd ../
+  - echo "We are in Docker Compose dir"
+script:
+  - docker-compose build
+before_deploy:
+  - echo $DOCKER_PASSWORD | docker login --username $DOCKER_USERNAME --password-stdin
+deploy:
+  provider: script
+  script:
+    docker tag node-react-backend:latest $DOCKER_USERNAME/node-react-backend:$TRAVIS_JOB_ID;
+    docker tag node-react-frontend:latest $DOCKER_USERNAME/node-react-frontend:$TRAVIS_JOB_ID;
+    docker push $DOCKER_USERNAME/node-react-backend:$TRAVIS_JOB_ID;
+    docker push $DOCKER_USERNAME/node-react-frontend:$TRAVIS_JOB_ID;
+  on:
+    branch: master
+notifications:
+  email: false
