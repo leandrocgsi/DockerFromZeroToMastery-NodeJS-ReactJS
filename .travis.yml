@@ -23,6 +23,6 @@ deploy:
     docker push $DOCKER_USERNAME/node-react-backend:$TRAVIS_JOB_ID;
     docker push $DOCKER_USERNAME/node-react-frontend:$TRAVIS_JOB_ID;
   on:
-    branch: master
+    branch: main
 notifications:
   email: false
