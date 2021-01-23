@@ -18,17 +18,14 @@ before_deploy:
 deploy:
   provider: script
   script:
-    docker tag node-react-backend:latest $DOCKER_USERNAME/node-react-backend:$TRAVIS_JOB_ID;
-    docker tag node-react-frontend:latest $DOCKER_USERNAME/node-react-frontend:$TRAVIS_JOB_ID;
-    
-    docker tag node-react-backend:latest $DOCKER_USERNAME/node-react-backend:latest;
-    docker tag node-react-frontend:latest $DOCKER_USERNAME/node-react-frontend:latest;
-    
-    docker push $DOCKER_USERNAME/node-react-backend:$TRAVIS_JOB_ID;
-    docker push $DOCKER_USERNAME/node-react-frontend:$TRAVIS_JOB_ID;
-    
-    docker push $DOCKER_USERNAME/node-react-backend:latest;
-    docker push $DOCKER_USERNAME/node-react-frontend:latest;
+    - docker tag node-react-backend:latest $DOCKER_USERNAME/node-react-backend:$TRAVIS_JOB_ID;
+    - docker tag node-react-backend:latest $DOCKER_USERNAME/node-react-backend:latest;
+    - docker push $DOCKER_USERNAME/node-react-backend:$TRAVIS_JOB_ID;
+    - docker push $DOCKER_USERNAME/node-react-backend:latest;    
+    - docker tag node-react-frontend:latest $DOCKER_USERNAME/node-react-frontend:$TRAVIS_JOB_ID;
+    - docker tag node-react-frontend:latest $DOCKER_USERNAME/node-react-frontend:latest;    
+    - docker push $DOCKER_USERNAME/node-react-frontend:$TRAVIS_JOB_ID;    
+    - docker push $DOCKER_USERNAME/node-react-frontend:latest;
   on:
     branch: main
 notifications:
