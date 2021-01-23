@@ -10,7 +10,7 @@ before_install:
   - echo "Let's install Node Modules in Back-end!!!"
   - npm install
   - cd ../
-  - echo "We are in Docker Compose dir"
+  - echo "We are in Docker Compose dir!"
 script:
   - docker-compose build
 before_deploy:
