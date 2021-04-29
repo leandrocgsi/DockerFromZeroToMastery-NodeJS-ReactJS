@@ -1,6 +1,10 @@
 # DockerFromZeroToMastery-NodeJS-ReactJS
 
 [![Build Status](https://travis-ci.com/leandrocgsi/DockerFromZeroToMastery-NodeJS-ReactJS.svg?branch=main)](https://travis-ci.com/leandrocgsi/DockerFromZeroToMastery-NodeJS-ReactJS)
+![Forks](https://img.shields.io/github/forks/leandrocgsi/DockerFromZeroToMastery-NodeJS-ReactJS)
+![Stars](https://img.shields.io/github/stars/leandrocgsi/DockerFromZeroToMastery-NodeJS-ReactJS)
+![Last Commit](https://img.shields.io/github/last-commit/leandrocgsi/DockerFromZeroToMastery-NodeJS-ReactJS)
+<a href="https://hub.docker.com/search?q=leandrocgsi&type=image"><img src="https://img.shields.io/badge/DockerHub-leandrocgsi-blue"/></a>
 
 # Docker do Zero à Maestria - Contêinerização Desmistificada
 
