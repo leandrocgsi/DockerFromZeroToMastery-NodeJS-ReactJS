@@ -2,7 +2,7 @@
 ### [Domine containeres! Aprenda Docker do 0 absoluto na teoria e na prática! Integre o Docker à apps Java, .NET, Node JS e +](https://www.udemy.com/course/docker-do-zero-a-maestria-conteinerizacao-desmistificada/?couponCode=GTHB_FLASH_SALE2021)
 
 
-[![Build Status](https://travis-ci.com/leandrocgsi/DockerFromZeroToMastery-NodeJS-ReactJS.svg?branch=main)](https://travis-ci.com/leandrocgsi/DockerFromZeroToMastery-NodeJS-ReactJS)
+[![Continuous Integration with GitHub, GitHub Actions and Docker Hub](https://github.com/leandrocgsi/DockerFromZeroToMastery-NodeJS-ReactJS/actions/workflows/continuous-integration.yml/badge.svg)](https://github.com/leandrocgsi/DockerFromZeroToMastery-NodeJS-ReactJS/actions/workflows/continuous-integration.yml)
 ![Forks](https://img.shields.io/github/forks/leandrocgsi/DockerFromZeroToMastery-NodeJS-ReactJS)
 ![Stars](https://img.shields.io/github/stars/leandrocgsi/DockerFromZeroToMastery-NodeJS-ReactJS)
 ![Last Commit](https://img.shields.io/github/last-commit/leandrocgsi/DockerFromZeroToMastery-NodeJS-ReactJS)
